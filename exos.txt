@@ -1,0 +1,53 @@
+-Ajouter un consommable Banana qui coûte 10g. --ok--
+--Soigne de 25 hp	--ok--
+--Ne peut pas être consommé si l'utilisateur a toute sa vie. --ok--
+
+-Ajouter un consommable RawChicken qui coûte 25g. --ok--
+--Occasionne 25 dégâts --ok--
+--Applique un effet Poison durant 4 tours --ok--
+
+-Ajouter un effet Regeneration qui rend 10 hp par tour --ok--
+
+-Ajouter un consommable LifePotion qui coûte 30g. --ok--
+--Soigne de 50 hp --ok--
+--Applique un effet Regeneration durant 5 tours --ok--
+--Ne peut pas être consommé si l'utilisateur a toute sa vie. --ok--
+
+-Ajouter un effet Silence qui baisse les mp à 0. --ok--
+
+-Ajouter un consommable SilencePotion qui coûte 10g.--ok--
+--Applique un effet Silence durant 5 tours. --ok--
+
+-Ajouter un consommable MagicPotion qui coûte 15g.--ok--
+--Rend 50 mp--ok--
+--Ne peut pas être consommé si l'utilisateur a tous ses MP --ok--
+--Ne peut pas être consommé si l'utilisateur est sous un effet Silence --ok--
+
+-Ajouter un consommable Antidote qui coûte 50g. --ok--
+--Retire tous les effets Poison. --ok--
+--Ne peut pas être consommé si l'utilisateur n'a pas d'effet Poison. --ok--
+
+-Ajouter un consommable Remedy qui coûte 20g. --ok--
+--Retire tous les effets Silence --ok--
+--Ne peut pas être consommé si l'utilisateur n'a pas d'effet Silence --ok--
+
+-Ajouter une nouvelle stat : hunger --ok--
+--Démarre à maxHunger = 100 --ok--
+--Diminue de 5 par tour de jeu, jusqu'au minimum de 0 --ok--
+--Soigne l'utilisateur de 2 par tour de jeu si supérieur à 80 --ok--
+--Occasionne 5 dégâts par tour si égal à 0 --ok--
+
+-Ajouter aux consommables suivants : --ok--
+--Apple remplit la hunger de 5 --ok--
+--Banana remplit la hunger de 10 --ok--
+--RawChicken remplit la hunger de 20 --ok--
+--Ne peuvent pas être consommés si l'utilisateur a toute sa hunger ET toute sa vie --ok--
+
+-Créer une classe abstraite NegativeEffect --ok--
+--Faire hériter NegativeEffect de Effect --ok--
+--Faire hériter Poison de NegativeEffect --ok--
+--Faire hériter Silence de NegativeEffect --ok--
+
+-Ajouter un consommable MiraclePotion qui coûte 100g. --ok--
+--Retire tous les effets négatifs --ok--
+--Ne peut pas être consommé si l'utilisateur n'a pas d'effet négatif --ok--
